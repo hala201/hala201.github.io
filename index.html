@@ -1,35 +1,270 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hala Murad — Machine Learning Researcher</title>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-  <header>
-    <h1>Hala Murad</h1>
-    <p>Machine Learning researcher — computational social science & computer graphics</p>
-    <nav>
-      <a href="#research">Research</a> ·
-      <a href="#work">Work</a> ·
-      <a href="#projects">Projects</a> ·
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<html>
 
-  <section id="research">
-    <h2>Research</h2>
-    <!-- add cards and images here -->
-    <article>
-      <h3>UofT — Chess Research</h3>
-      <img src="/images/chess-demo.gif" alt="Chess demo">
-      <p>Short summary, links to paper / code.</p>
-    </article>
+<head>
+  <meta charset="utf-8">
+
+  <title>Hala Murad</title>
+  <link rel="icon" type="image/jpg" href="figs/oate.jpg"/>
+  <script src="script.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ7CXV8TXT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VQ7CXV8TXT');
+    </script>
+
+  <!-- styLing -->
+  <Link rel="stylesheet" href="css/styles.css">
+  <Link rel="preconnect" href="https://fonts.googleapis.com">
+  <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <Link href="https://fonts.googleapis.com/css2?family=Saira:wght@200;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://kit.fontawesome.com/3cb16648c5.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:wght@200;300&family=Noto+Sans+TC:wght@100;300&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+</head>
+
+<body class="full-center">
+  <div class="site-container">
+    <!-- header of page -->
+    <section>
+      <div id="title">
+        <h1>Hala Murad</h1>
+      </div>
+
+      <div id="button">
+        <button onclick="changeMode()">
+          <i class="fa fa-solid fa-lightbulb"></i>
+        </button>
+      </div> 
+
+      <!-- blurb -->
+      <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+          <img src="assets/images/me.jpg" class="profile-image" alt="Hala Murad">
+          <div>
+              <p>
+                  I am a software engineer and researcher in computational imaging as well as computational social sciences.
+              </p>
+              
+              <p>
+                  I am a graduate from the University of British Columbia with a Bachelor's of Arts in Computer Science. My studies were generously funded on a full-ride scholarship by the International Leader of Tomorrow Award. A huge thank you to Professor Kevin Leyton-Brown for his support of my research in machine learning and game theory.
+              </p>
+          </div>
+      </div>
+
+      <!--links-->
+      <div class="info-links">
+        <a href="assets/placeholder.pdf">cv</a> &nbsp;&nbsp;
+
+        <a href="https://scholar.google.ca/citations?hl=en&user=zLRpl9QAAAAJ">
+          <i class="fa fa-solid fa-graduation-cap"></i>
+        </a> &nbsp;&nbsp;
+        
+        <a href="https://github.com/hala201">
+          <i class="fa fa-brands fa-github"></i>
+        </a> &nbsp;&nbsp;
+
+
+        <a href="mailto:halamurad01@gmail.com">
+          halamurad01 [at] gmail.com
+        </a>&nbsp;
+
+      </div>
+
+    <br>
+
+    <br>
+
+    <!-- experience -->
+
+    <section>
+      <h2>Research in Computational Social Sciences</h2>
+      <table>
+      <colgroup>
+           <col span="1" style="width: 20%;">
+           <col span="1" style="width: 80%;">
+       </colgroup>
+        <!--<col style="width:120px">-->
+        <tbody>
+            <tr>
+              <td><img src="assets/gifs/gamenet.gif"></td> 
+              <td>
+                  <div class="paper">
+                    <div class="paper-title">
+                      <a href="https://arxiv.org/abs/2503.05925" style="font-weight:bold">
+                          Deep Learning for Behavioral Game Theory
+                      </a>
+                    </div>
+                      
+                      <a href="https://gregdeon.com/">Greg d'Eon</a>, Hala Murad,
+                      <a href="https://www.cs.ubc.ca/~kevinlb/">Kevin Leyton-Brown</a>,
+                      <a href="https://jrwright.info/">James Wright</a>
+                      <br>
+                      <div class="paper-summary">
+                        Elementary GameNet is a neural network that predicts human non-strategic behavior in normal-form games (accepted into AAAI'26).
+                      </div>
+                  </div>
+              </td>
+            </tr>
+            </tr> 
+            <!-- paper -->
+            <tr>
+              <td><img src="assets/gifs/chess.gif"></td> 
+              <td>
+                  <div class="paper">
+                    <div class="paper-title">
+                      <a href="https://www.maiachess.com" style="font-weight:bold">
+                          AI Sparring Partners: Alternate Search Strategies in Chess
+                      </a>
+                    </div>
+                    <a href="https://www.linkedin.com/in/karim-hamade-400143200">Karim Hamade</a>, Hala Murad, 
+                      <a href="https://www.cs.toronto.edu/~ashton/">Ashton Anderson</a>
+                      <br>
+                      <div class="paper-summary">
+                        Maia is a skill-compatible chess agent, we are developing a chess agent that acts as a sparring partner by tricking its human opponent (Work in prgress).              
+                      </div>
+              </td>
+            </tr>
+
+            </tbody>
+      </table>
+    </section>
+
+    <br>
+    <section>
+      <h2>Research in Computater Graphics</h2>
+      <table>
+      <colgroup>
+           <col span="1" style="width: 20%;">
+           <col span="1" style="width: 80%;">
+       </colgroup>
+        <!--<col style="width:120px">-->
+        <tbody>
+            <!-- paper -->
+            <tr>
+              <td><img src="assets/gifs/stroke.gif"></td>
+              <td>
+                  <div class="paper">
+                    <div class="paper-title">
+                      <a href="https://www.cs.ubc.ca/labs/imager/tr/2021/StrokeStrip/" style=font-weight:bold>
+                        StrokeStrip: Joint Parameterization and Fitting of Stroke Clusters
+                      </a>
+                    </div>
+                      <a href="https://www.davepagurek.com/">Dave Pagurek van Mossel</a>,
+                      <a href="https://chenxil21.github.io/">Chenxi Liu</a>,
+                      <a href="https://www.cs.ubc.ca/~nvining/">Nicholas Vining</a>,
+                      <a href="https://www.linkedin.com/in/mikhailbessmeltsev/">Mikhail Bessmeltsev</a>,
+                      <a href="https://www.cs.ubc.ca/~sheffa/">Alla Sheffer</a>
+                      <br>
+                      <div class="paper-summary">
+                          StrokeStrip is a robust method for fitting intended curves to vector-format stroke clusters consistent with the viewer's expectation.
+                      </div>
+                  </div>
+              </td>
+            </tr>
+          <!-- paper -->
+          <tr>
+            <td><img src="assets/gifs/fossa.gif"></td>
+            <td>
+                <div class="paper">
+                  <div class="paper-title">
+                    <a href="https://eml.ubc.ca/projects/fossa-finder/" style=font-weight:bold>
+                        Fossa Finder: Virtual Reality for Anatomy Simulation
+                    </a>
+                  </div>
+                      <a href="https://metanautlabs.com/">Metanaut Labs</a>,
+                      <a href="https://eml.ubc.ca/">UBC Emerging Media Lab</a>
+                  <br>
+                  <div class="paper-summary">
+                    Fossa Finder is an interactive educational virtual reality tool to aid anatomy education with regards to the Pterygopalatine Fossa in collaboration with the UBC School of Dentistry and Metanaut Labs.
+                  </div>
+                </div>
+              </div>
+          </td>
+        </tr>
+        <!-- next paper lol -->
+
+      </tbody>
+    </table>
   </section>
 
-  <footer id="contact">
-    <p>Github: <a href="https://github.com/hala201">github.com/hala201</a> · LinkedIn: <a href="https://linkedin.com/in/hala-murad">LinkedIn</a></p>
-  </footer>
+  <br>
+
+  <!-- experience -->
+  <section>
+    <h2>Experience</h2>
+    <ul>
+        <li>Software Developer @ SAP</li>
+        <li>Software Developer @ Safe Software</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <!-- other projcts -->
+  <section>
+    <h2>Projects</h2>
+    <table>
+    <colgroup>
+          <col span="1" style="width: 20%;">
+          <col span="1" style="width: 80%;">
+      </colgroup>
+      <!--<col style="width:120px">-->
+      <tbody>
+        <ul>
+        <li>Automated Sports Commentary</li>
+    </ul>
+          <!-- on my desk -->
+        
+      </tbody>
+    </table>
+  </section>
+
+  <br>
+
+  <!-- teaching -->
+  <section>
+    <h2>Teaching</h2>
+    <ul>
+        <li>CPSC 213</li>
+        <li>CPSC 210</li>
+        <li>CPSC 310</li>
+        <li>COGS 200</li>
+    </ul>
+  </section>
+
+  <br>
+
+
+  <!-- play -->
+  <section>
+    <h2>Fun</h2>
+    <table>
+    <colgroup>
+         <col span="1" style="width: 20%;">
+         <col span="1" style="width: 80%;">
+     </colgroup>
+      <!--<col style="width:120px">-->
+      <tbody>
+        Easel athlete
+          <!-- on my desk -->
+        <tr>
+          
+      </tbody>
+    </table>
+  </section>
+
+  <br>
+
+  </div>
 </body>
+
 </html>
