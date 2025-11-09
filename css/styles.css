@@ -326,6 +326,39 @@ body {
   box-sizing: border-box;
 }
 
+/* Smooth scrolling for in-page links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Top navigation (tabs) */
+.top-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 120;
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.7));
+    backdrop-filter: blur(4px);
+}
+
+.top-nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.top-nav a:hover,
+.top-nav a:focus {
+    background: rgba(0,0,0,0.05);
+}
+
 .paper {
-    margin-left: 1.5rem;
+        margin-left: 1.5rem;
 }

@@ -5,8 +5,6 @@
   <meta charset="utf-8">
 
   <title>Hala Murad</title>
-  <link rel="icon" type="image/jpg" href="figs/oate.jpg"/>
-  <script src="script.js"></script>
 
   <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ7CXV8TXT"></script>
@@ -30,12 +28,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+  <!-- site script -->
+  <script src="script.js" defer></script>
+
 </head>
 
 <body class="full-center">
   <div class="site-container">
     <!-- header of page -->
-    <section>
+    <section id="about">
       <div id="title">
         <h1>Hala Murad</h1>
       </div>
@@ -45,6 +46,17 @@
           <i class="fa fa-solid fa-lightbulb"></i>
         </button>
       </div> 
+
+      <!-- Top navigation tabs -->
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research-social">Computational Social Science</a>
+        <a href="#research-graphics">Computer Graphics</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#art">Art</a>
+      </nav>
 
       <!-- blurb -->
       <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
@@ -60,16 +72,16 @@
           </div>
       </div>
 
-      <!--links-->
-      <div class="info-links">
-        <a href="assets/placeholder.pdf">cv</a> &nbsp;&nbsp;
-
         <a href="https://scholar.google.ca/citations?hl=en&user=zLRpl9QAAAAJ">
           <i class="fa fa-solid fa-graduation-cap"></i>
         </a> &nbsp;&nbsp;
         
         <a href="https://github.com/hala201">
           <i class="fa fa-brands fa-github"></i>
+        </a> &nbsp;&nbsp;
+
+        <a href="https://linkedin.com/in/hala-murad">
+          <i class="fa fa-brands fa-linkedin"></i>
         </a> &nbsp;&nbsp;
 
 
@@ -85,7 +97,7 @@
 
     <!-- experience -->
 
-    <section>
+    <section id="research-social">
       <h2>Research in Computational Social Sciences</h2>
       <table>
       <colgroup>
@@ -139,7 +151,7 @@
     </section>
 
     <br>
-    <section>
+    <section id="research-graphics">
       <h2>Research in Computater Graphics</h2>
       <table>
       <colgroup>
@@ -165,7 +177,7 @@
                       <a href="https://www.cs.ubc.ca/~sheffa/">Alla Sheffer</a>
                       <br>
                       <div class="paper-summary">
-                          StrokeStrip is a robust method for fitting intended curves to vector-format stroke clusters consistent with the viewer's expectation.
+                          StrokeStrip is a robust method for fitting intended curves to vector-format stroke clusters consistent with the viewer's expectation. I was briefly involved in building a web-interface for the Stroke Strip tool.
                       </div>
                   </div>
               </td>
@@ -199,18 +211,63 @@
   <br>
 
   <!-- experience -->
-  <section>
+  <section id="experience">
     <h2>Experience</h2>
-    <ul>
-        <li>Software Developer @ SAP</li>
-        <li>Software Developer @ Safe Software</li>
-    </ul>
+    <table>
+    <colgroup>
+          <col span="1" style="width: 20%;">
+          <col span="1" style="width: 80%;">
+      </colgroup>
+      <!--<col style="width:120px">-->
+      <tbody>
+        <tr>
+            <td><img src="assets/gifs/sap.png"></td>
+            <td>
+                <div class="paper">
+                  <div class="paper-title">
+                    <a href="https://www.sap.com/canada/index.html" style=font-weight:bold>
+                        Software Engineering Intern @ SAP
+                    </a>
+                  </div>
+                  <br>
+                  <div class="paper-summary">
+                    Implemented and deployed an LRU cache for an application routing microservice in a multi-tenant web-architecture.
+                  </div>
+                </div>
+
+                
+              </div>
+          </td>
+        </tr>
+
+        <tr>
+            <td><img src="assets/gifs/fme.gif"></td>
+            <td>
+                <div class="paper">
+                  <div class="paper-title">
+                    <a href="https://www.safe.com/" style=font-weight:bold>
+                        Software Engineering Intern @ Safe Software
+                    </a>
+                  </div>
+                  <br>
+                  <div class="paper-summary">
+                    Worked on optimizing geo-spatial data integration and processing workflows for satellite and aerial imagery.
+                  </div>
+                </div>
+
+                
+              </div>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
   </section>
 
   <br>
 
   <!-- other projcts -->
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
     <table>
     <colgroup>
@@ -219,25 +276,38 @@
       </colgroup>
       <!--<col style="width:120px">-->
       <tbody>
-        <ul>
-        <li>Automated Sports Commentary</li>
-    </ul>
-          <!-- on my desk -->
+        <tr>
+            <td><img src="assets/gifs/f1.gif"></td>
+            <td>
+                <div class="paper">
+                  <div class="paper-title">
+                    <a href="https://github.com/hala201/f1-live-commentator" style=font-weight:bold>
+                        Need for Speech: Automated Formula One Commentary
+                    </a>
+                  </div>
+                  <br>
+                  <div class="paper-summary">
+                    Formula One AI Commentator System is an intelligent, end-to-end pipeline that autonomously generates real-time, Formula 1 race commentary by fusing live telemetry with external knowledge sources and using the Boson AI Higgs Audio model.
+                  </div>
+                </div>
+              </div>
+          </td>
+        </tr>
         
       </tbody>
     </table>
-  </section>
+
 
   <br>
 
   <!-- teaching -->
-  <section>
+  <section id="teaching">
     <h2>Teaching</h2>
     <ul>
-        <li>CPSC 213</li>
-        <li>CPSC 210</li>
-        <li>CPSC 310</li>
-        <li>COGS 200</li>
+        <a href="https://vancouver.calendar.ubc.ca/course-descriptions/subject/cpscv#:~:text=CPSC_V%20213%20(4)%20Introduction%20to%20Computer%20Systems"><li>CPSC 213: Introduction to Operating Systems</li></a>
+        <a href="https://vancouver.calendar.ubc.ca/course-descriptions/subject/cpscv#:~:text=CPSC_V%20210%20(4)%20Software%20Construction"><li>CPSC 210: Software Construction</li></a>
+        <a href="https://vancouver.calendar.ubc.ca/course-descriptions/subject/cpscv#:~:text=CPSC_V%20310%20(4)%20Introduction%20to%20Software%20Engineering"><li>CPSC 310: Introduction to Software Engineering</li></a>
+        <a href="https://cogsys.ubc.ca/course-pages/#:~:text=COGS%20200%20%E2%80%93%20Introduction%20to%20Cognitive%20Systems"><li>COGS 200: Introduction to Cognitive Systems</li></a>
     </ul>
   </section>
 
@@ -245,8 +315,8 @@
 
 
   <!-- play -->
-  <section>
-    <h2>Fun</h2>
+  <section id="art">
+    <h2>Art</h2>
     <table>
     <colgroup>
          <col span="1" style="width: 20%;">
@@ -254,14 +324,29 @@
      </colgroup>
       <!--<col style="width:120px">-->
       <tbody>
-        Easel athlete
-          <!-- on my desk -->
+        <tr>
+            <td><img src="assets/images/artbattle.jpg"></td>
+            <td>
+                <div class="paper">
+                  <div class="paper-title">
+                    <a href="https://artbattle.com/" style=font-weight:bold>
+                        Art Battle: Live Painting Tournament 
+                    </a>
+                  </div>
+                  <br>
+                  <div class="paper-summary">
+                    As an easel artist, I’ve both competed in and organized Art Battle, a global live painting competition. My work follows a Neo-Expressionist style, and I’m currently assembling a portfolio of my acrylic paintings, stay tuned!
+                  </div>
+                </div>
+              </div>
+          </td>
+        </tr>
         <tr>
           
       </tbody>
     </table>
   </section>
-
+</section>
   <br>
 
   </div>
