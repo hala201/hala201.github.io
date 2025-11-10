@@ -140,28 +140,53 @@ p, ol, ul, li {
     margin-top: 30px;
 }
 
-/* interactive stuff */
 
-.toggle {
-    position: relative;
+/* Timeline styling */
+.timeline {
+    display: flex;
+    flex-direction: column;
+
 }
 
-.toggle:hover:after {
-    position: relative;
-    top: 0;
-    left: 0;
-    font-size: 0.8rem;
-    content: "";
-    opacity: 0.7;
+.timeline-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: baseline;
+    gap: 1rem;
 }
 
-.toggle-button:hover {
-    position: relative;
-    width: 30px;
-    top: 0;
-    left: 0;
-    height: auto;
-    z-index: 999;
+.timeline-year {
+    font-weight: bold;
+    color: var(--font-color);
+    text-align: right;
+}
+
+.timeline-content {
+    color: var(--font-color);
+}
+
+.dark-mode .timeline-year,
+.dark-mode .timeline-content {
+    color: var(--dark-font-color);
+}
+
+/* Timeline styling */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.timeline-year {
+    font-weight: bold;
+    min-width: 100px;
+    text-align: right;
 }
 
 /* Projects */
@@ -373,4 +398,20 @@ html {
 
 .paper {
         margin-left: 1.5rem;
+}
+
+/* Button styles */
+
+button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
